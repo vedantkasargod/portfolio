@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .font-mono {
+    font-family: "Share Tech Mono", monospace;
+  }
+}
+
+@layer utilities {
+  .prose-invert {
+    color: #d1d5db;
+  }
+
+  .prose-invert h1,
+  .prose-invert h2,
+  .prose-invert h3 {
+    color: #ffffff;
+  }
+
+  .prose-invert p {
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .pixel-dot {
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .retro-glow {
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.3), inset 0 0 5px rgba(0, 255, 0, 0.1);
+  }
+
+  .pixel-monitor {
+    background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+    border: 2px solid #4b5563;
+    position: relative;
+  }
+
+  .pixel-monitor::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 1px solid #6b7280;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 1px,
+      rgba(0, 255, 0, 0.1) 1px,
+      rgba(0, 255, 0, 0.1) 2px
+    );
+  }
+
+  .pixel-screen {
+    background: #000;
+    border: 1px solid #374151;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pixel-screen::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 0, 0.05) 2px,
+      rgba(0, 255, 0, 0.05) 4px
+    );
+    pointer-events: none;
+  }
+}
