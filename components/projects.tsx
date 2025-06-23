@@ -5,6 +5,13 @@ import { ArrowUpRight } from "lucide-react"
 
 const projects = [
   {
+    id: "arXiv-MCP",
+    title: "arXiv MCP",
+    description: "Enter the name of the paper you want to read. Generates TL;DR, Summary, Key pointers, Difficulty ratings, pre-requisites, and more.",
+    slug: "arxiv-mcp",
+    video: "public/mcp-arxiv-2.mp4",
+  },
+  {
     id: "adaptive-chatbot",
     title: "Adaptive Chatbot System",
     description: "Autonomous chatbot. Can take in user queries and decide which tool to call and spits response",
