@@ -10,7 +10,7 @@ export default function About() {
         <p className="mb-3">
           The journey began with the usual chase for accuracy for linear regression models, to questioning outputs. I draft fast prototypes, pull apart edge cases, 
           and refine systems. I like to dive into complexities of the working of systems.
-          Also love building reliable AI products. Currently levraging LLM's to be integrated in business workflows.
+          Also love building reliable AI products. Currently leveraging LLM's to be integrated in business workflows.
           Searching for SOTA techniques by day, resorting to
           first principles thinking by night.
         </p>
